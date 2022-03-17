@@ -8,7 +8,13 @@ const Vehicles = ({ id, handleSearch, data }) => {
   return (
     <div className="my-5 border-1 border-black rounded-lg w-full">
       {data === "Not found" && (
-        <p className="text-red-500 font-bold">Not found</p>
+        <p className="text-red-500 font-bold">
+          These aren't the Droids you're looking for...
+          <img
+            src="https://www.meme-arsenal.com/memes/52577612a290566287f2273992fa918e.jpg"
+            alt="Obi Wan"
+          />
+        </p>
       )}
       {data && (
         <ul>
